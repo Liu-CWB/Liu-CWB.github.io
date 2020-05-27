@@ -36,13 +36,13 @@
         var jude = td.getHours();
         var lead
         var startime
-        if (jude <= 7) {
+        if (jude <= 6) {
             lead = "12";
             startime = new Date(yds[0], yds[1] - 1, yds[2], lead, lead, 0);
-        } else if (jude <= 13) {
+        } else if (jude <= 12) {
             lead = "18";
             startime = new Date(yds[0], yds[1] - 1, yds[2], lead, 0, 0);
-        } else if (jude <= 19) {
+        } else if (jude <= 18) {
             lead = "00";
             startime = new Date(tds[0], tds[1] - 1, tds[2], 0, 0, 0);
         } else {
@@ -110,6 +110,15 @@
             document.getElementById("p2tau").innerText = "{0}".format([initime[2]])
             document.getElementById("p3tau").innerText = "{0}".format([initime[3]])
         }
+
+        function image(img) {
+
+            var src = img.src;
+
+            window.open(src, "box", "height=600,width=600");
+
+        }
+
         window.onload = myFunction1;
     </script>
     <h1>WRFD過去4報</h1>
@@ -155,139 +164,139 @@
         </tr>
         <tr>
             <td id="ntau"></td>
-            <td><img id="ntau003" src="" width="250" height="300"></td>
-            <td><img id="ntau006" src="" width="250" height="300"></td>
-            <td><img id="ntau009" src="" width="250" height="300"></td>
-            <td><img id="ntau012" src="" width="250" height="300"></td>
-            <td><img id="ntau015" src="" width="250" height="300"></td>
-            <td><img id="ntau018" src="" width="250" height="300"></td>
-            <td><img id="ntau021" src="" width="250" height="300"></td>
-            <td><img id="ntau024" src="" width="250" height="300"></td>
-            <td><img id="ntau027" src="" width="250" height="300"></td>
-            <td><img id="ntau030" src="" width="250" height="300"></td>
-            <td><img id="ntau033" src="" width="250" height="300"></td>
-            <td><img id="ntau036" src="" width="250" height="300"></td>
-            <td><img id="ntau039" src="" width="250" height="300"></td>
-            <td><img id="ntau042" src="" width="250" height="300"></td>
-            <td><img id="ntau045" src="" width="250" height="300"></td>
-            <td><img id="ntau048" src="" width="250" height="300"></td>
-            <td><img id="ntau051" src="" width="250" height="300"></td>
-            <td><img id="ntau054" src="" width="250" height="300"></td>
-            <td><img id="ntau057" src="" width="250" height="300"></td>
-            <td><img id="ntau060" src="" width="250" height="300"></td>
-            <td><img id="ntau063" src="" width="250" height="300"></td>
-            <td><img id="ntau066" src="" width="250" height="300"></td>
-            <td><img id="ntau069" src="" width="250" height="300"></td>
-            <td><img id="ntau072" src="" width="250" height="300"></td>
-            <td><img id="ntau075" src="" width="250" height="300"></td>
-            <td><img id="ntau078" src="" width="250" height="300"></td>
-            <td><img id="ntau081" src="" width="250" height="300"></td>
-            <td><img id="ntau084" src="" width="250" height="300"></td>
-            <td><img id="ntau090" src="" width="250" height="300"></td>
-            <td><img id="ntau096" src="" width="250" height="300"></td>
-            <td><img id="ntau102" src="" width="250" height="300"></td>
-            <td><img id="ntau108" src="" width="250" height="300"></td>
-            <td><img id="ntau114" src="" width="250" height="300"></td>
-            <td><img id="ntau120" src="" width="250" height="300"></td>
+            <td><img id="ntau003" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau006" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau009" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau012" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau015" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau018" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau021" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau024" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau027" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau030" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau033" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau036" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau039" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau042" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau045" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau048" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau051" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau054" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau057" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau060" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau063" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau066" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau069" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau072" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau075" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau078" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau081" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau084" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau090" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau096" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau102" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau108" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau114" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="ntau120" src="" width="250" height="300" onclick="image(this)"></td>
         </tr>
         <tr>
             <td id="p1tau"></td>
-            <td><img id="p1tau009" src="" width="250" height="300"></td>
-            <td><img id="p1tau012" src="" width="250" height="300"></td>
-            <td><img id="p1tau015" src="" width="250" height="300"></td>
-            <td><img id="p1tau018" src="" width="250" height="300"></td>
-            <td><img id="p1tau021" src="" width="250" height="300"></td>
-            <td><img id="p1tau024" src="" width="250" height="300"></td>
-            <td><img id="p1tau027" src="" width="250" height="300"></td>
-            <td><img id="p1tau030" src="" width="250" height="300"></td>
-            <td><img id="p1tau033" src="" width="250" height="300"></td>
-            <td><img id="p1tau036" src="" width="250" height="300"></td>
-            <td><img id="p1tau039" src="" width="250" height="300"></td>
-            <td><img id="p1tau042" src="" width="250" height="300"></td>
-            <td><img id="p1tau045" src="" width="250" height="300"></td>
-            <td><img id="p1tau048" src="" width="250" height="300"></td>
-            <td><img id="p1tau051" src="" width="250" height="300"></td>
-            <td><img id="p1tau054" src="" width="250" height="300"></td>
-            <td><img id="p1tau057" src="" width="250" height="300"></td>
-            <td><img id="p1tau060" src="" width="250" height="300"></td>
-            <td><img id="p1tau063" src="" width="250" height="300"></td>
-            <td><img id="p1tau066" src="" width="250" height="300"></td>
-            <td><img id="p1tau069" src="" width="250" height="300"></td>
-            <td><img id="p1tau072" src="" width="250" height="300"></td>
-            <td><img id="p1tau075" src="" width="250" height="300"></td>
-            <td><img id="p1tau078" src="" width="250" height="300"></td>
-            <td><img id="p1tau081" src="" width="250" height="300"></td>
-            <td><img id="p1tau084" src="" width="250" height="300"></td>
-            <td><img id="p1tau090" src="" width="250" height="300"></td>
-            <td><img id="p1tau096" src="" width="250" height="300"></td>
-            <td><img id="p1tau102" src="" width="250" height="300"></td>
-            <td><img id="p1tau108" src="" width="250" height="300"></td>
-            <td><img id="p1tau114" src="" width="250" height="300"></td>
-            <td><img id="p1tau120" src="" width="250" height="300"></td>
+            <td><img id="p1tau009" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau012" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau015" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau018" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau021" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau024" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau027" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau030" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau033" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau036" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau039" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau042" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau045" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau048" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau051" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau054" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau057" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau060" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau063" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau066" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau069" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau072" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau075" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau078" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau081" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau084" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau090" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau096" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau102" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau108" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau114" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p1tau120" src="" width="250" height="300" onclick="image(this)"></td>
         </tr>
         <tr>
             <td id="p2tau"></td>
-            <td><img id="p2tau015" src="" width="250" height="300"></td>
-            <td><img id="p2tau018" src="" width="250" height="300"></td>
-            <td><img id="p2tau021" src="" width="250" height="300"></td>
-            <td><img id="p2tau024" src="" width="250" height="300"></td>
-            <td><img id="p2tau027" src="" width="250" height="300"></td>
-            <td><img id="p2tau030" src="" width="250" height="300"></td>
-            <td><img id="p2tau033" src="" width="250" height="300"></td>
-            <td><img id="p2tau036" src="" width="250" height="300"></td>
-            <td><img id="p2tau039" src="" width="250" height="300"></td>
-            <td><img id="p2tau042" src="" width="250" height="300"></td>
-            <td><img id="p2tau045" src="" width="250" height="300"></td>
-            <td><img id="p2tau048" src="" width="250" height="300"></td>
-            <td><img id="p2tau051" src="" width="250" height="300"></td>
-            <td><img id="p2tau054" src="" width="250" height="300"></td>
-            <td><img id="p2tau057" src="" width="250" height="300"></td>
-            <td><img id="p2tau060" src="" width="250" height="300"></td>
-            <td><img id="p2tau063" src="" width="250" height="300"></td>
-            <td><img id="p2tau066" src="" width="250" height="300"></td>
-            <td><img id="p2tau069" src="" width="250" height="300"></td>
-            <td><img id="p2tau072" src="" width="250" height="300"></td>
-            <td><img id="p2tau075" src="" width="250" height="300"></td>
-            <td><img id="p2tau078" src="" width="250" height="300"></td>
-            <td><img id="p2tau081" src="" width="250" height="300"></td>
-            <td><img id="p2tau084" src="" width="250" height="300"></td>
-            <td><img id="p2tau090" src="" width="250" height="300"></td>
-            <td><img id="p2tau096" src="" width="250" height="300"></td>
-            <td><img id="p2tau102" src="" width="250" height="300"></td>
-            <td><img id="p2tau108" src="" width="250" height="300"></td>
-            <td><img id="p2tau114" src="" width="250" height="300"></td>
-            <td><img id="p2tau120" src="" width="250" height="300"></td>
+            <td><img id="p2tau015" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau018" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau021" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau024" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau027" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau030" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau033" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau036" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau039" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau042" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau045" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau048" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau051" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau054" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau057" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau060" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau063" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau066" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau069" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau072" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau075" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau078" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau081" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau084" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau090" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau096" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau102" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau108" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau114" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p2tau120" src="" width="250" height="300" onclick="image(this)"></td>
         </tr>
         <tr>
             <td id="p3tau"></td>
-            <td><img id="p3tau021" src="" width="250" height="300"></td>
-            <td><img id="p3tau024" src="" width="250" height="300"></td>
-            <td><img id="p3tau027" src="" width="250" height="300"></td>
-            <td><img id="p3tau030" src="" width="250" height="300"></td>
-            <td><img id="p3tau033" src="" width="250" height="300"></td>
-            <td><img id="p3tau036" src="" width="250" height="300"></td>
-            <td><img id="p3tau039" src="" width="250" height="300"></td>
-            <td><img id="p3tau042" src="" width="250" height="300"></td>
-            <td><img id="p3tau045" src="" width="250" height="300"></td>
-            <td><img id="p3tau048" src="" width="250" height="300"></td>
-            <td><img id="p3tau051" src="" width="250" height="300"></td>
-            <td><img id="p3tau054" src="" width="250" height="300"></td>
-            <td><img id="p3tau057" src="" width="250" height="300"></td>
-            <td><img id="p3tau060" src="" width="250" height="300"></td>
-            <td><img id="p3tau063" src="" width="250" height="300"></td>
-            <td><img id="p3tau066" src="" width="250" height="300"></td>
-            <td><img id="p3tau069" src="" width="250" height="300"></td>
-            <td><img id="p3tau072" src="" width="250" height="300"></td>
-            <td><img id="p3tau075" src="" width="250" height="300"></td>
-            <td><img id="p3tau078" src="" width="250" height="300"></td>
-            <td><img id="p3tau081" src="" width="250" height="300"></td>
-            <td><img id="p3tau084" src="" width="250" height="300"></td>
-            <td><img id="p3tau090" src="" width="250" height="300"></td>
-            <td><img id="p3tau096" src="" width="250" height="300"></td>
-            <td><img id="p3tau102" src="" width="250" height="300"></td>
-            <td><img id="p3tau108" src="" width="250" height="300"></td>
-            <td><img id="p3tau114" src="" width="250" height="300"></td>
-            <td><img id="p3tau120" src="" width="250" height="300"></td>
+            <td><img id="p3tau021" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau024" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau027" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau030" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau033" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau036" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau039" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau042" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau045" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau048" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau051" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau054" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau057" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau060" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau063" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau066" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau069" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau072" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau075" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau078" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau081" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau084" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau090" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau096" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau102" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau108" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau114" src="" width="250" height="300" onclick="image(this)"></td>
+            <td><img id="p3tau120" src="" width="250" height="300" onclick="image(this)"></td>
         </tr>
 
     </table>

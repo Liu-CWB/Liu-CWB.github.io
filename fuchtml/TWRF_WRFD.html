@@ -36,13 +36,13 @@
         var jude = td.getHours();
         var lead
         var startime
-        if (jude <= 7) {
+        if (jude <= 6) {
             lead = "12";
             startime = new Date(yds[0], yds[1] - 1, yds[2], lead, lead, 0);
-        } else if (jude <= 13) {
+        } else if (jude <= 12) {
             lead = "18";
             startime = new Date(yds[0], yds[1] - 1, yds[2], lead, 0, 0);
-        } else if (jude <= 19) {
+        } else if (jude <= 18) {
             lead = "00";
             startime = new Date(tds[0], tds[1] - 1, tds[2], 0, 0, 0);
         } else {
@@ -142,6 +142,15 @@
             document.getElementById("myButton2").style.color = "black"
             document.getElementById("myButton3").style.color = "black"
         }
+
+        function image(img) {
+
+            var src = img.src;
+
+            window.open(src, "box", "height=600,width=600");
+
+        }
+
         window.onload = myFunction1;
     </script>
     <h1>TWRF and WRFD</h1>
@@ -189,27 +198,27 @@
         </tr>
         <tr>
             <td>TWRF</td>
-            <td><img id="tau000" src="" width="300" height="300"></td>
-            <td><img id="tau006" src="" width="300" height="300"></td>
-            <td><img id="tau012" src="" width="300" height="300"></td>
-            <td><img id="tau018" src="" width="300" height="300"></td>
-            <td><img id="tau024" src="" width="300" height="300"></td>
-            <td><img id="tau030" src="" width="300" height="300"></td>
-            <td><img id="tau036" src="" width="300" height="300"></td>
-            <td><img id="tau042" src="" width="300" height="300"></td>
-            <td><img id="tau048" src="" width="300" height="300"></td>
-            <td><img id="tau054" src="" width="300" height="300"></td>
-            <td><img id="tau060" src="" width="300" height="300"></td>
-            <td><img id="tau066" src="" width="300" height="300"></td>
-            <td><img id="tau072" src="" width="300" height="300"></td>
-            <td><img id="tau078" src="" width="300" height="300"></td>
-            <td><img id="tau084" src="" width="300" height="300"></td>
-            <td><img id="tau090" src="" width="300" height="300"></td>
-            <td><img id="tau096" src="" width="300" height="300"></td>
-            <td><img id="tau102" src="" width="300" height="300"></td>
-            <td><img id="tau108" src="" width="300" height="300"></td>
-            <td><img id="tau114" src="" width="300" height="300"></td>
-            <td><img id="tau120" src="" width="300" height="300"></td>
+            <td><img id="tau000" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau006" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau012" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau018" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau024" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau030" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau036" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau042" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau048" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau054" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau060" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau066" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau072" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau078" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau084" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau090" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau096" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau102" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau108" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau114" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tau120" src="" width="300" height="300" onclick="image(this)"></td>
         </tr>
     </table>
     <table>
@@ -239,51 +248,51 @@
         </tr>
         <tr>
             <td>TWRF ACC</td>
-            <td><img src="./nophoto.png" width="300" height="300"></td>
-            <td><img id="tacctau006" src="" width="300" height="300"></td>
-            <td><img id="tacctau012" src="" width="300" height="300"></td>
-            <td><img id="tacctau018" src="" width="300" height="300"></td>
-            <td><img id="tacctau024" src="" width="300" height="300"></td>
-            <td><img id="tacctau030" src="" width="300" height="300"></td>
-            <td><img id="tacctau036" src="" width="300" height="300"></td>
-            <td><img id="tacctau042" src="" width="300" height="300"></td>
-            <td><img id="tacctau048" src="" width="300" height="300"></td>
-            <td><img id="tacctau054" src="" width="300" height="300"></td>
-            <td><img id="tacctau060" src="" width="300" height="300"></td>
-            <td><img id="tacctau066" src="" width="300" height="300"></td>
-            <td><img id="tacctau072" src="" width="300" height="300"></td>
-            <td><img id="tacctau078" src="" width="300" height="300"></td>
-            <td><img id="tacctau084" src="" width="300" height="300"></td>
-            <td><img id="tacctau090" src="" width="300" height="300"></td>
-            <td><img id="tacctau096" src="" width="300" height="300"></td>
-            <td><img id="tacctau102" src="" width="300" height="300"></td>
-            <td><img id="tacctau108" src="" width="300" height="300"></td>
-            <td><img id="tacctau114" src="" width="300" height="300"></td>
-            <td><img id="tacctau120" src="" width="300" height="300"></td>
+            <td><img src="./nophoto.png" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau006" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau012" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau018" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau024" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau030" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau036" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau042" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau048" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau054" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau060" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau066" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau072" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau078" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau084" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau090" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau096" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau102" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau108" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau114" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="tacctau120" src="" width="300" height="300" onclick="image(this)"></td>
         </tr>
         <tr>
             <td>WRFD ACC</td>
-            <td><img src="./nophoto.png" width="300" height="300"></td>
-            <td><img id="dacctau006" src="" width="300" height="300"></td>
-            <td><img id="dacctau012" src="" width="300" height="300"></td>
-            <td><img id="dacctau018" src="" width="300" height="300"></td>
-            <td><img id="dacctau024" src="" width="300" height="300"></td>
-            <td><img id="dacctau030" src="" width="300" height="300"></td>
-            <td><img id="dacctau036" src="" width="300" height="300"></td>
-            <td><img id="dacctau042" src="" width="300" height="300"></td>
-            <td><img id="dacctau048" src="" width="300" height="300"></td>
-            <td><img id="dacctau054" src="" width="300" height="300"></td>
-            <td><img id="dacctau060" src="" width="300" height="300"></td>
-            <td><img id="dacctau066" src="" width="300" height="300"></td>
-            <td><img id="dacctau072" src="" width="300" height="300"></td>
-            <td><img id="dacctau078" src="" width="300" height="300"></td>
-            <td><img id="dacctau084" src="" width="300" height="300"></td>
-            <td><img id="dacctau090" src="" width="300" height="300"></td>
-            <td><img id="dacctau096" src="" width="300" height="300"></td>
-            <td><img id="dacctau102" src="" width="300" height="300"></td>
-            <td><img id="dacctau108" src="" width="300" height="300"></td>
-            <td><img id="dacctau114" src="" width="300" height="300"></td>
-            <td><img id="dacctau120" src="" width="300" height="300"></td>
+            <td><img src="./nophoto.png" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau006" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau012" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau018" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau024" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau030" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau036" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau042" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau048" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau054" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau060" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau066" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau072" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau078" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau084" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau090" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau096" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau102" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau108" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau114" src="" width="300" height="300" onclick="image(this)"></td>
+            <td><img id="dacctau120" src="" width="300" height="300" onclick="image(this)"></td>
         </tr>
     </table>
 </body>
