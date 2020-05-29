@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>RUN RUN</title>
+</head>
+<script>
+    // This is the function for strin format//
+    String.prototype.format = function(args) {
+        var str = this;
+        return str.replace(String.prototype.format.regex, function(item) {
+            var intVal = parseInt(item.substring(1, item.length - 1));
+            var replace;
+            if (intVal >= 0) {
+                replace = args[intVal];
+            } else if (intVal === -1) {
+                replace = "{";
+            } else if (intVal === -2) {
+                replace = "}";
+            } else {
+                replace = "";
+            }
+            return replace;
+        });
+    };
+    String.prototype.format.regex = new RegExp("{-?[0-9]+}", "g");
+    var td = new Date();
+    var yd = new Date(new Date().setDate(new Date().getDate() - 1));
+    var tds = td.toLocaleDateString().split("/");
+    var yds = yd.toLocaleDateString().split("/");
+    var jude = td.getHours();
+    var lead
+    var startime
+    if (jude <= 6) {
+        lead = "12";
+        startime = new Date(yds[0], yds[1] - 1, yds[2], lead, lead, 0);
+    } else if (jude <= 12) {
+        lead = "18";
+        startime = new Date(yds[0], yds[1] - 1, yds[2], lead, 0, 0);
+    } else if (jude <= 18) {
+        lead = "00";
+        startime = new Date(tds[0], tds[1] - 1, tds[2], 0, 0, 0);
+    } else {
+        lead = "06";
+        startime = new Date(tds[0], tds[1] - 1, tds[2], 6, 0, 0);
+    }
+</script>
+
+<body>
+    <h1>颱風路徑</h1>
+    <img src="./ongoing-projects.gif" width="300" height="300">
+</body>
+
+</html>
