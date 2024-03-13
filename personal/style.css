@@ -1,0 +1,30 @@
+
+.wrap{ /*父元素*/
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    background: red;
+    width: 50%;
+    height: 200px;
+}
+.right{
+    background: blue;
+    width: 50%;
+    height: 200px;
+}
+
+.button {
+            background-color: #56C290;
+            border: none;
+            color: #160CC9;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            }
