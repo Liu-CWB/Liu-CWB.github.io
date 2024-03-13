@@ -6,13 +6,13 @@
     justify-content: space-between;
 }
 .left{
-    background: red;
-    width: 50%;
-    height: 200px;
+    background: #ecf6ed;
+    width: 20%;
+    height: 100%;
 }
 .right{
-    background: blue;
-    width: 50%;
+    background: #ecf4f6;
+    width: 80%;
     height: 200px;
 }
 
